@@ -11,6 +11,9 @@
 		044CD99F2103211D008A89B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044CD99E2103211D008A89B8 /* Assets.xcassets */; };
 		044CD9A22103211D008A89B8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044CD9A02103211D008A89B8 /* MainMenu.xib */; };
 		044CD9A52103211D008A89B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044CD9A42103211D008A89B8 /* main.m */; };
+		04B8B74A2108B053003297F2 /* QQNSLoginWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B8B7492108B053003297F2 /* QQNSLoginWindow.m */; };
+		04B8B74D2108B465003297F2 /* QQView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B8B74C2108B465003297F2 /* QQView.m */; };
+		04B8B7582108C8EC003297F2 /* file_aio_icon_cancel_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B8B7572108C8EC003297F2 /* file_aio_icon_cancel_n@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		044CD9A32103211D008A89B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		044CD9A42103211D008A89B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		044CD9A62103211D008A89B8 /* QQProjectByLeon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QQProjectByLeon.entitlements; sourceTree = "<group>"; };
+		04B8B7482108B053003297F2 /* QQNSLoginWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQNSLoginWindow.h; sourceTree = "<group>"; };
+		04B8B7492108B053003297F2 /* QQNSLoginWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQNSLoginWindow.m; sourceTree = "<group>"; };
+		04B8B74B2108B465003297F2 /* QQView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQView.h; sourceTree = "<group>"; };
+		04B8B74C2108B465003297F2 /* QQView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQView.m; sourceTree = "<group>"; };
+		04B8B7572108C8EC003297F2 /* file_aio_icon_cancel_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file_aio_icon_cancel_n@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 		044CD99A2103211D008A89B8 /* QQProjectByLeon */ = {
 			isa = PBXGroup;
 			children = (
+				04B8B7562108C8D8003297F2 /* ImageResource */,
+				044CD9AC2103218C008A89B8 /* LoginView+重绘画NSWindo */,
 				044CD99B2103211D008A89B8 /* AppDelegate.h */,
 				044CD99C2103211D008A89B8 /* AppDelegate.m */,
 				044CD99E2103211D008A89B8 /* Assets.xcassets */,
@@ -63,6 +73,25 @@
 				044CD9A62103211D008A89B8 /* QQProjectByLeon.entitlements */,
 			);
 			path = QQProjectByLeon;
+			sourceTree = "<group>";
+		};
+		044CD9AC2103218C008A89B8 /* LoginView+重绘画NSWindo */ = {
+			isa = PBXGroup;
+			children = (
+				04B8B74B2108B465003297F2 /* QQView.h */,
+				04B8B74C2108B465003297F2 /* QQView.m */,
+				04B8B7482108B053003297F2 /* QQNSLoginWindow.h */,
+				04B8B7492108B053003297F2 /* QQNSLoginWindow.m */,
+			);
+			path = "LoginView+重绘画NSWindo";
+			sourceTree = "<group>";
+		};
+		04B8B7562108C8D8003297F2 /* ImageResource */ = {
+			isa = PBXGroup;
+			children = (
+				04B8B7572108C8EC003297F2 /* file_aio_icon_cancel_n@2x.png */,
+			);
+			path = ImageResource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044CD99F2103211D008A89B8 /* Assets.xcassets in Resources */,
+				04B8B7582108C8EC003297F2 /* file_aio_icon_cancel_n@2x.png in Resources */,
 				044CD9A22103211D008A89B8 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B8B74D2108B465003297F2 /* QQView.m in Sources */,
 				044CD9A52103211D008A89B8 /* main.m in Sources */,
 				044CD99D2103211D008A89B8 /* AppDelegate.m in Sources */,
+				04B8B74A2108B053003297F2 /* QQNSLoginWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
